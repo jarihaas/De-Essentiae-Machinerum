@@ -1,12 +1,21 @@
 \documentclass[11pt,a5paper]{article}
-\usepackage{graphicx} % Required for inserting images
+\usepackage{csquotes}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{graphicx}
 \usepackage{mathtools}
+\usepackage[backend=biber,style=verbose-note]{biblatex}
 \usepackage[font=tiny,labelfont=bf]{caption}
 
-\graphicspath{ {./Assets/Img} }
+\addbibresource{./Referencias.bib}
+
+\setmainlanguage{portuguese}
+\graphicspath{{./Assets/Img}}
 
 \title{De Essentiae Machinerum}
-\author{João Jåri Haas}
+
+\author{João Jari Haas}
+
 \date{Maio 2026}
 
 \begin{document}
@@ -16,7 +25,6 @@
 \include{Content/Prologo}
 \include{Content/Fundamenta}
 
-\subsection{Da Geometria e Movimento}
 \subsection{Da Mudança e Cadência}
 
 \section{Principia Machinarum}

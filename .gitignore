@@ -4,3 +4,5 @@
 *.synctex(busy)
 *.fls
 *.synctex.gz
+*.bcf
+*.xml

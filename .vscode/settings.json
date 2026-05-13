@@ -1,5 +1,25 @@
 {
-    "latex-workshop.latex.autoBuild.run": "onSave",
-    "latex-workshop.view.pdf.viewer": "tab",
-    "latex-workshop.latex.recipe.default": "latexmk"
+  "latex-workshop.latex.tools": [
+    {
+      "name": "xelatex",
+      "command": "xelatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    }
+  ],
+
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "XeLaTeX",
+      "tools": [
+        "xelatex"
+      ]
+    }
+  ],
+
+  "latex-workshop.latex.recipe.default": "XeLaTeX"
 }
